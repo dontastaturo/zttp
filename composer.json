@@ -1,7 +1,10 @@
 {
     "name": "kitetail/zttp",
     "description": "A developer-experience focused HTTP client, optimized for most common use cases.",
-    "keywords": ["http", "guzzle"],
+    "keywords": [
+        "http",
+        "guzzle"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -11,7 +14,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "guzzlehttp/guzzle": "^6.0",
+        "guzzlehttp/guzzle": "^7.0.1",
         "tightenco/collect": "^5.4"
     },
     "require-dev": {
@@ -25,5 +28,10 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": false
+        }
     }
 }
